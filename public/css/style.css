@@ -1,0 +1,233 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #222;
+    padding: 30px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-size: 28px;
+}
+
+button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#addApplicationButton {
+    background-color: #1f6feb;
+    color: white;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+main section:first-child {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: 600;
+    margin-right: 8px;
+}
+
+select {
+    padding: 9px 35px 9px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: white;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+th {
+    background-color: #f0f2f5;
+    font-weight: 600;
+}
+
+tbody tr {
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+form {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+form section {
+    margin-bottom: 25px;
+}
+
+form section:first-child {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+form div {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-bottom: 7px;
+}
+
+form input,
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#saveApplicationButton {
+    background-color: #1f6feb;
+    color: white;
+}
+
+#cancelButton {
+    background-color: #e5e7eb;
+    color: #222;
+}
+
+#saveApplicationButton:hover {
+    background-color: #185abd;
+}
+
+#cancelButton:hover {
+    background-color: #d1d5db;
+}
+
+
+.details-page section {
+    background-color: white;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.details-page section:first-child h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+
+.details-page section:first-child p {
+    color: #666;
+    font-size: 16px;
+}
+
+.details-page section:nth-child(2) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.details-page section:nth-child(2) div {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.details-page section:nth-child(2) strong {
+    font-size: 13px;
+    color: #666;
+    text-transform: uppercase;
+}
+
+.details-page section:nth-child(2) p {
+    font-size: 16px;
+}
+
+.details-page section:nth-child(2) select {
+    max-width: 250px;
+}
+
+#updateStatusButton {
+    background-color: #1f6feb;
+    color: white;
+    margin-top: 5px;
+}
+
+#updateStatusButton:hover {
+    background-color: #185abd;
+}
+
+.details-page section:nth-child(3) h3 {
+    margin-bottom: 10px;
+}
+
+.details-page section:nth-child(3) p {
+    line-height: 1.6;
+    color: #444;
+}
+
+.details-page section:nth-child(4) {
+    background-color: transparent;
+    padding: 0;
+    margin-bottom: 10px;
+}
+
+.details-page section:nth-child(4) p {
+    color: #777;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+#successMessage {
+    color: #188038;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+#backButton {
+    background-color: #e5e7eb;
+    color: #222;
+}
+
+#backButton:hover {
+    background-color: #d1d5db;
+}

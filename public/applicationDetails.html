@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Details</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Application Details</h1>
+        <button id="backButton">Back</button>
+    </header>
+
+    <main class="details-page">
+
+        <section>
+            <h2 id="companyName"></h2>
+            <p id="jobTitle"></p>
+        </section>
+
+        <section>
+            <div>
+                <strong>Location</strong>
+                <p id="location"></p>
+            </div>
+
+            <div>
+                <strong>Date Applied</strong>
+                <p id="dateApplied"></p>
+            </div>
+
+            <div>
+                <strong>Job Type</strong>
+                <p id="jobType"></p>
+            </div>
+
+            <div>
+                <strong>Status</strong>
+                <select id="statusSelect"></select>
+                <button id="updateStatusButton">Update Status</button>
+            </div>
+        </section>
+
+        <section>
+            <h3>Notes</h3>
+            <p id="notes"></p>
+        </section>
+
+        <section>
+            <p>Created: <span id="createdAt"></span></p>
+            <p>Last Updated: <span id="updatedAt"></span></p>
+        </section>
+
+        <p id="successMessage"></p>
+
+    </main>
+<script src="js/applicationDetails.js"></script>
+</body>
+</html>

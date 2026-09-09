@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Application</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Add Application</h1>
+        <button id="cancelButton">Cancel</button>
+    </header>
+
+    <main>
+
+        <form id="applicationForm">
+
+            <section>
+                <div>
+                    <label for="companyName">Company</label>
+                    <input type="text" id="companyName" required>
+                </div>
+
+                <div>
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" required>
+                </div>
+
+                <div>
+                    <label for="location">Location</label>
+                    <input type="text" id="location">
+                </div>
+
+                <div>
+                    <label for="dateApplied">Date Applied</label>
+                    <input type="date" id="dateApplied" required>
+                </div>
+
+                <div>
+                    <label for="statusSelect">Status</label>
+                    <select id="statusSelect" required></select>
+                </div>
+
+                <div>
+                    <label for="jobTypeSelect">Job Type</label>
+                    <select id="jobTypeSelect" required></select>
+                </div>
+            </section>
+
+            <section>
+                <div>
+                    <label for="notes">Notes</label>
+                    <textarea id="notes"></textarea>
+                </div>
+            </section>
+
+            <section>
+                <button type="submit" id="saveApplicationButton">Save Application</button>
+            </section>
+
+        </form>
+
+    </main>
+<script src="js/addApplications.js"></script>
+</body>
+</html>
