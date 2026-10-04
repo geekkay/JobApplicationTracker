@@ -7,7 +7,7 @@ const jobTypesRoutes = require('./routes/jobTypes');
 const applicationsRoutes = require('./routes/applications');
 
 const app = express();
-const PORT = 3000;
+//const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
@@ -21,6 +21,8 @@ app.get('/api/test', (req, res) => {
     });
 });
 
+const PORT = process.env.PORT || 3000;
+
 app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });
