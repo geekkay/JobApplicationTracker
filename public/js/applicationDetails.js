@@ -8,11 +8,11 @@ async function loadApplication() {
     document.getElementById('companyName').textContent = application.CompanyName;
     document.getElementById('jobTitle').textContent = application.JobTitle;
     document.getElementById('location').textContent = application.Location;
-    document.getElementById('dateApplied').textContent = application.DateApplied;
+    document.getElementById('dateApplied').textContent = application.DateApplied.split('T')[0];
     document.getElementById('jobType').textContent = application.JobType;
     document.getElementById('notes').textContent = application.Notes;
-    document.getElementById('createdAt').textContent = application.CreatedAt;
-    document.getElementById('updatedAt').textContent = application.UpdatedAt;
+    document.getElementById('createdAt').textContent = application.CreatedAt.split('T')[0];
+    document.getElementById('updatedAt').textContent = application.UpdatedAt.split('T')[0];
     document.getElementById('statusSelect').value = application.StatusID;
 }
 async function loadStatuses() {

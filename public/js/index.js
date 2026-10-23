@@ -37,7 +37,7 @@ function renderApplications(applicationList) {
         row.innerHTML = `
             <td>${application.CompanyName}</td>
             <td>${application.JobTitle}</td>
-            <td>${application.DateApplied}</td>
+            <td>${application.DateApplied.split('T')[0]}</td>
             <td>${application.StatusName}</td>
             <td>${application.JobType}</td>
         `;

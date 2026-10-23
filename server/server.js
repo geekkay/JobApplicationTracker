@@ -7,7 +7,6 @@ const jobTypesRoutes = require('./routes/jobTypes');
 const applicationsRoutes = require('./routes/applications');
 
 const app = express();
-//const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, '../public')));
 app.use(express.json());
