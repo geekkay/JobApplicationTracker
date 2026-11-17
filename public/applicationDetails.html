@@ -43,9 +43,29 @@
             </div>
         </section>
 
-        <section>
-            <h3>Notes</h3>
+        <section class="notes-section">
+
+            <div class="notes-header">
+                <h3>Notes</h3>
+
+                <button id="editNotesButton" class="icon-button" title="Edit notes" aria-label="Edit notes">
+                <span>✎</span>
+                </button>
+            </div>
+
             <p id="notes"></p>
+
+            <div id="notesEditor" hidden>
+                <textarea id="notesInput" rows="6"></textarea>
+
+                <div class="notes-actions">
+                    <button id="cancelNotesButton" class="cancel-notes-button">Cancel</button>
+                    <button id="saveNotesButton" class="save-notes-button">Save Changes</button>
+                </div>
+            </div>
+
+            <p id="notesMessage"></p>
+
         </section>
 
         <section>

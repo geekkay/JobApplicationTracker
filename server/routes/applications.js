@@ -166,4 +166,38 @@ router.put('/:id/status', async (req, res) => {
     }
 });
 
+router.put('/:id/notes', async (req, res) => {
+    try {
+        const { Notes } = req.body;
+
+        const pool = await poolPromise;
+
+        const result = await pool.request()
+            .input('ApplicationID', sql.Int, req.params.id)
+            .input('Notes', sql.VarChar, Notes)
+            .query(`
+                UPDATE Applications
+                SET
+                    Notes = @Notes,
+                    UpdatedAt = GETDATE()
+                OUTPUT INSERTED.*
+                WHERE ApplicationID = @ApplicationID
+            `);
+
+        if (result.recordset.length === 0) {
+            return res.status(404).json({
+                error: 'Application not found'
+            });
+        }
+
+        res.json(result.recordset[0]);
+    } catch (error) {
+        console.error('Error updating application notes:', error);
+
+        res.status(500).json({
+            error: 'Failed to update application notes'
+        });
+    }
+});
+
 module.exports = router;
